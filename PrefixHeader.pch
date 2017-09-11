@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  Tabbar
+//
+//  Created by apple on 16/5/9.
+//  Copyright © 2016年 apple. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+DDAddition.h"
+#import "MOIBaseViewController.h"
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define kDefaultFontSize(xxx) [UIFont systemFontOfSize:xxx]
+
+#define kheight ([UIScreen mainScreen].bounds.size.height)
+#define kwidth ([UIScreen mainScreen].bounds.size.width)
+
+#define SetColorWith(x,y,z) [UIColor colorWithRed:x/255.0 green:y/255.0 blue:z/255.0 alpha:1]
+
+#define kDefaultBoldFontSize(xxx) [UIFont boldSystemFontOfSize:xxx]
+
+
+
+#endif /* PrefixHeader_pch */

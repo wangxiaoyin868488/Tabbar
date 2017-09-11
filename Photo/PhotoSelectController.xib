@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoSelectController">
+            <connections>
+                <outlet property="jumpBtn" destination="rgU-U1-5p7" id="2aq-Dj-525"/>
+                <outlet property="titleView" destination="zMw-Wa-JW0" id="khc-kU-ylB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBA-6G-6sj">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7c-px-kAT">
+                            <rect key="frame" x="0.0" y="20" width="40" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="m8b-5C-24Y"/>
+                                <constraint firstAttribute="width" constant="40" id="yV4-eU-56a"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="返回">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="backBtnClick:" destination="-1" eventType="touchUpInside" id="Cyo-uy-Crd"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMw-Wa-JW0">
+                            <rect key="frame" x="114" y="33" width="93" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相机胶卷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHd-ZZ-Mid">
+                                    <rect key="frame" x="0.0" y="0.0" width="76" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="选择照片下拉箭头" translatesAutoresizingMaskIntoConstraints="NO" id="PZw-Du-ys1">
+                                    <rect key="frame" x="78" y="6" width="15" height="8"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="8" id="5eI-vS-3rG"/>
+                                        <constraint firstAttribute="width" constant="15" id="fnz-El-lSM"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Jgg-N5-op7"/>
+                                <constraint firstItem="EHd-ZZ-Mid" firstAttribute="top" secondItem="zMw-Wa-JW0" secondAttribute="top" id="V30-zW-snC"/>
+                                <constraint firstItem="PZw-Du-ys1" firstAttribute="centerY" secondItem="zMw-Wa-JW0" secondAttribute="centerY" id="ZdV-6B-a0W"/>
+                                <constraint firstAttribute="trailing" secondItem="PZw-Du-ys1" secondAttribute="trailing" id="cv9-nI-bU0"/>
+                                <constraint firstAttribute="bottom" secondItem="EHd-ZZ-Mid" secondAttribute="bottom" id="jtU-uZ-7Pz"/>
+                                <constraint firstItem="PZw-Du-ys1" firstAttribute="leading" secondItem="EHd-ZZ-Mid" secondAttribute="trailing" constant="2" id="wLF-h5-dQa"/>
+                                <constraint firstItem="EHd-ZZ-Mid" firstAttribute="leading" secondItem="zMw-Wa-JW0" secondAttribute="leading" id="xE5-5S-elG"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgU-U1-5p7">
+                            <rect key="frame" x="260" y="31" width="50" height="25"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="JDj-PZ-079"/>
+                                <constraint firstAttribute="width" constant="50" id="tow-Wv-XQL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="跳过">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="jumpBtnClick:" destination="-1" eventType="touchUpInside" id="iUu-Ns-uF1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="e7c-px-kAT" secondAttribute="bottom" id="D7M-b1-4GU"/>
+                        <constraint firstItem="zMw-Wa-JW0" firstAttribute="centerY" secondItem="DBA-6G-6sj" secondAttribute="centerY" constant="10" id="Fzl-P1-p0k"/>
+                        <constraint firstAttribute="trailing" secondItem="rgU-U1-5p7" secondAttribute="trailing" constant="10" id="GIl-LH-g0G"/>
+                        <constraint firstItem="zMw-Wa-JW0" firstAttribute="centerX" secondItem="DBA-6G-6sj" secondAttribute="centerX" id="KGY-Vl-Olj"/>
+                        <constraint firstItem="e7c-px-kAT" firstAttribute="leading" secondItem="DBA-6G-6sj" secondAttribute="leading" id="NeF-81-FB9"/>
+                        <constraint firstAttribute="height" constant="65" id="gYl-cX-Pp8"/>
+                        <constraint firstItem="rgU-U1-5p7" firstAttribute="centerY" secondItem="zMw-Wa-JW0" secondAttribute="centerY" id="kSV-mm-pid"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DBA-6G-6sj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7cR-YY-nIM"/>
+                <constraint firstAttribute="trailing" secondItem="DBA-6G-6sj" secondAttribute="trailing" id="Eev-AJ-JsA"/>
+                <constraint firstItem="DBA-6G-6sj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ccf-JM-o98"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="选择照片下拉箭头" width="14" height="8"/>
+    </resources>
+</document>
